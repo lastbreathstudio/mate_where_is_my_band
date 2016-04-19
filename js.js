@@ -50,9 +50,9 @@ function submit(){
 					//console.log( obj[deep]);
 					$('.bandname').html(tag); 
 					
-					id = "<div class='date'><p class='day'>" + day + "</p><span class='month'>" + m_names[month] + "</span><p class='place'>" + obj.venue.name + "<span class='city'>" + obj.formatted_location + "</span></p><p class='venue'>"  + "</p></div>";
+					id = "<div class='res'><div class='date'>" + day + "</div><div class='month'>" + m_names[month] + "</div><div class='place'>" + obj.venue.name + "</div><div class='city'>" + obj.formatted_location + "</div></div>";
 
-		  		$('#images').append(id);
+		  		$('#results').append(id);
 				//}
 	  		}
 		}else{
